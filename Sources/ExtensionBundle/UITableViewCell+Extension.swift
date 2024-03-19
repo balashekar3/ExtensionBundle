@@ -7,13 +7,13 @@
 
 import Foundation
 import UIKit
-extension UITableViewCell {
+public extension UITableViewCell {
     
-    public static var nib: UINib {
+    static var nib: UINib {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
     
-    public static var identifier: String {
+    static var identifier: String {
         return String(describing: self)
     }
 }
